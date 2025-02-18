@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<body>
+    <style>
+        body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            color: #dc2a16;
+            height: 100vh;
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translatey(0)
+            }
+
+            50% {
+                transform: translatey(-20px)
+            }
+        }
+
+        .efeito-flutuante-infinito {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgb(42, 38, 38);
+            border-bottom-style: dashed;
+            padding: 7px;
+            animation: float 2.5s ease-in-out infinite;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 50px 20px -7px;
+        }
+    </style>
+
+    <div class="efeito-flutuante-infinito">
+        Carregando, aguarde!
+    </div>
+
+</body>
+
+</html>
