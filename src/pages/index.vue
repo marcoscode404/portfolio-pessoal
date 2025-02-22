@@ -204,20 +204,19 @@ function handleAccessLink(url: string) {
                     </h2>
 
                     <p class="leading-8 dark:text-gray-300 my-5">
-                        Sou Desenvolvedor Front-end a mais de 2 anos, com uma leve paixão no mercado
+                        Sou Desenvolvedor Front-end a mais de 2 anos e 9 meses, com uma leve paixão no mercado
                         financeiro/investimentos.
 
                         <br />
-                        Se o problema não possui solução, está solucionado...
-                        Se tudo é prioridade, não há prioridade...
-                    </p>
-                </article>
-            </div>
+                            apaixonado por tecnologia, inovação e boas práticas de programação.
+                            Com uma sólida experiência na área, tenho trabalhado ativamente no desenvolvimento de aplicações web e mobile, 
+                            utilizando tecnologias modernas para entregar soluções eficientes e escaláveis.
+                        <br />
 
-            <div class="border  h-fit w-full dark:bg-token_bgHeader
-        rounded-md dark:border-msDarkHeader">
-                <article class="p-6">
-                    <h2 class="pb-4 dark:text-gray-400">Destaques</h2>
+                            Nesse Período atuei como Técnico em informática no Hospital Unimed Porto Velho.
+                            - atuando com o gerenciamento de Sistema Hospitalar MV PEP e MV apoio, criação de novas novas telas para o Sistema, suporte ao usuario, criação de logins para medicos e enfermeiros. resolução de problemas, formatação de maquinas, cripagem de Cabos cat5 e cat6. 
+                        
+                    </p>
                 </article>
             </div>
 
@@ -260,9 +259,42 @@ function handleAccessLink(url: string) {
             <div class="border  h-fit w-full dark:bg-token_bgHeader
         rounded-md dark:border-msDarkHeader">
                 <article class="p-6">
-                    <h2 class="pb-4 dark:text-gray-400">Certificados</h2>
+                    <h2 class="pb-4 dark:text-gray-400">Experiência</h2>
                     <div>
-                        asdasd
+                        <section>
+                            <p class="dark:text-gray-300 leading-8">
+                            <strong>
+                                <UBadge color="purple" class="animate-pulse h-3" size="xs"/>
+                                Frontend Developer
+                                Modena e Silva · Tempo integralModena e Silva · Tempo integral
+                            </strong>
+                            <br>
+                            jun de 2022 - o momento · 2 anos 9 mesesDe jun de 2022 até o momento · 2 anos 9 meses
+                            Rondônia, BrasilRondônia, Brasil
+                            desenvolvimento com React.js, material UI, Vue.js, Nuxt.js, Pinia(gerenciamento de estado) Git, typeScript linux, Axios, figma, python, 
+                            fastApidesenvolvimento com React.js, material UI, Vue.js, Nuxt.js, Pinia(gerenciamento de estado) Git, typeScript linux, Axios, figma, python, fastApi
+                            API REST, Design de interface do usuário e mais 12 competências
+                            </p>
+                        </section>
+
+                        <section class="mt-2">
+                            <p class="dark:text-gray-300 leading-8">
+                                <strong>
+                                    <UBadge color="gray" class="h-3" size="xs"/>
+                                    Técnico de suporte em TI Hospital Unimed Porto Velho RO
+                                </strong>
+                                <br>
+                                jun de 2020 - set de 2022 · 2 anos 4 meses De jun de 2020 até set de 2022 · 2 anos 4 meses.
+                                <br>
+                                Porto Velho, Rondônia, Brasil
+                                Nesse Período atuei como Técnico em informática no Hospital Unimed Porto Velho.
+                                - atuando com o gerenciamento de Sistema Hospitalar MV PEP e MV apoio, criação de novas novas telas para o Sistema, suporte ao usuario, 
+                                criação de logins para medicos e enfermeiros. resolução de problemas, formatação de maquinas, cripagem de Cabos cat5 e cat6.
+                                Nesse Período atuei como Técnico em informática no Hospital Unimed Porto Velho. - atuando com o gerenciamento de Sistema Hospitalar MV PEP e MV apoio,
+                                 criação de novas novas telas para o Sistema, suporte ao usuario, criação de logins para medicos e enfermeiros. resolução de problemas, formatação de maquinas, cripagem de Cabos cat5 e cat6.
+                                analise de sistemas
+                            </p>
+                        </section>
                     </div>
                 </article>
             </div>
@@ -270,13 +302,13 @@ function handleAccessLink(url: string) {
             <div class="border  h-fit w-full dark:bg-token_bgHeader
         rounded-md dark:border-msDarkHeader">
                 <article class="p-6">
-                    <h2 class="pb-4 dark:text-gray-400">Experiência</h2>
+                    <h2 class="pb-4 dark:text-gray-400">Certificados</h2>
                     <div>
-                        <div>
-                        </div>
+                        Em breve
                     </div>
                 </article>
             </div>
+
 
             <!-- metricas nerdianas -->
             <div class="border  h-fit w-full dark:bg-token_bgHeader

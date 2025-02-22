@@ -46,8 +46,8 @@ watch(CtrlQ, (v) => {
     </ClientOnly>
 
     <ClientOnly v-else>
-      <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray" variant="ghost"
-        aria-label="Theme" @click="isDark = !isDark" />
+      <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="black" variant="ghost"
+        aria-label="Theme" @click="isDark = !isDark" class=" bg-msDarkHover"/>
 
       <template #fallback>
         <div class="w-8 h-8" />

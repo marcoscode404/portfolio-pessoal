@@ -11,7 +11,7 @@
                 <div class="flex font-jersey text-white gap-2
                  text-2xl items-center font-bold tracking-wider">
                     <GlobalIcon name="lineicons:nuxt" class="h-8 w-8 text-purple-400"/>
-                    Andromeda
+                    <!-- <Icon name="simple-icons:stackhawk" class="text-purple-400"/> -->
                 </div>
 
                 <div class="flex gap-2" role="group">
@@ -28,7 +28,7 @@
                 <div class="relative flex items-center gap-2">
                     <div class="h-10 flex items-center px-2 rounded-lg
                             focus:z-10 focus:ring-2 !text-white focus:ring-white focus:text-white">
-                        <GlobalButtonDarkMode />
+                        <GlobalButtonDarkMode :type="'button'"/>
                     </div>
 
                 </div>
