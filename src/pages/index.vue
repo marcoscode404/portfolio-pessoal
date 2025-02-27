@@ -261,7 +261,7 @@ function handleAccessLink(url: string) {
                         <section>
                             <p class="dark:text-gray-300 leading-8">
                                 <strong>
-                                    <UBadge color="sky" class="animate-pulse h-3 mr-2" size="xs" />
+                                    <UBadge color="purple" class="animate-pulse h-3 mr-2" size="xs" />
                                     Frontend Developer
                                     Modena e Silva · Tempo integralModena e Silva · Tempo integral
                                 </strong>
