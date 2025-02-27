@@ -48,21 +48,21 @@ const technologies = ref(['JAVASCRIPT', 'TYPESCRIPT', 'PYTHON', 'VUE', 'NUXT', '
 const linkSocialMedia = reactive({
     github: 'marcoscode404',
     links: [{
-        icon: 'line-md:github-loop',
+        icon: 'mdi:github',
         url: 'https://github.com/marcoscode404',
         name: 'GITHUB',
-        style: 'dark:bg-msDarkHover bg-slate-200 rounded-full p-2',
+        style: ' rounded-full dark:text-gray-300 text-blue-600 h-5 w-5',
     }, {
         icon: 'ri:linkedin-fill',
         url: 'https://www.linkedin.com/in/marcosvini-colabdevs/',
         name: 'LINKDIN',
-        style: 'w-6 h-6 dark:text-gray-300 text-blue-600',
-    },{
-        icon: 'line-md:instagram',
+        style: 'h-5 w-5 dark:text-gray-300 text-blue-600',
+    }, {
+        icon: 'hugeicons:instagram',
         url: 'https://www.instagram.com/marcosviniicode/',
         name: 'INSTAGRAM',
-        style: 'w-5 h-5 dark:text-purple-300 text-blue-600',
-    }, ],
+        style: 'h-5 w-5 dark:text-gray-300 text-blue-600',
+    },],
 })
 
 function getGitHubProfileInfos() {
@@ -72,7 +72,7 @@ function getGitHubProfileInfos() {
         .then(data => {
             collectData.value = data;
         })
-        .catch((err) => {  $toast.error(getApiError(err))  })
+        .catch((err) => { })
 }
 
 onMounted(async () => {
@@ -96,7 +96,7 @@ function handleAccessLink(url: string) {
 </script>
 
 <template>
-    <main class="flex gap-7 container m-auto mt-4 h-[calc(100vh-100px)] flex-wrap">
+    <main class="flex gap-7 container max-w-[100rem] m-auto mt-4 h-[calc(100vh-100px)] flex-wrap">
         <aside class="lg:w-96 w-full">
             <div class="lg:fixed">
                 <div>
@@ -181,7 +181,7 @@ function handleAccessLink(url: string) {
                                 <li>
                                     <button @click="handleAccessLink(link.url)"
                                         class="bg-slate-200 dark:bg-msDarkHover rounded-full p-2">
-                                        <GlobalIcon :name="link.icon" :class="link.style"/>
+                                        <GlobalIcon :name="link.icon" :class="link.style" />
                                     </button>
                                 </li>
                             </ul>
@@ -208,14 +208,11 @@ function handleAccessLink(url: string) {
                         financeiro/investimentos.
 
                         <br />
-                            apaixonado por tecnologia, inovação e boas práticas de programação.
-                            Com uma sólida experiência na área, tenho trabalhado ativamente no desenvolvimento de aplicações web e mobile, 
-                            utilizando tecnologias modernas para entregar soluções eficientes e escaláveis.
+                        apaixonado por tecnologia, inovação e boas práticas de programação.
+                        Com uma sólida experiência na área, tenho trabalhado ativamente no desenvolvimento de aplicações
+                        web e mobile,
+                        utilizando tecnologias modernas para entregar soluções eficientes e escaláveis.
                         <br />
-
-                            Nesse Período atuei como Técnico em informática no Hospital Unimed Porto Velho.
-                            - atuando com o gerenciamento de Sistema Hospitalar MV PEP e MV apoio, criação de novas novas telas para o Sistema, suporte ao usuario, criação de logins para medicos e enfermeiros. resolução de problemas, formatação de maquinas, cripagem de Cabos cat5 e cat6. 
-                        
                     </p>
                 </article>
             </div>
@@ -229,8 +226,8 @@ function handleAccessLink(url: string) {
                         <div>
                             <strong>Tecnologias</strong>
                             <div class="flex flex-wrap gap-2 mt-2">
-                                <div v-for="(technology, index) in technologies" :key="index" >
-                                    <UBadge :label="technology" class="dark:bg-token_bgDark font-bold" color="gray"/>
+                                <div v-for="(technology, index) in technologies" :key="index">
+                                    <UBadge :label="technology" class="dark:bg-token_bgDark font-bold" color="gray" />
                                 </div>
                             </div>
 
@@ -263,36 +260,68 @@ function handleAccessLink(url: string) {
                     <div>
                         <section>
                             <p class="dark:text-gray-300 leading-8">
-                            <strong>
-                                <UBadge color="purple" class="animate-pulse h-3" size="xs"/>
-                                Frontend Developer
-                                Modena e Silva · Tempo integralModena e Silva · Tempo integral
-                            </strong>
-                            <br>
-                            jun de 2022 - o momento · 2 anos 9 mesesDe jun de 2022 até o momento · 2 anos 9 meses
-                            Rondônia, BrasilRondônia, Brasil
-                            desenvolvimento com React.js, material UI, Vue.js, Nuxt.js, Pinia(gerenciamento de estado) Git, typeScript linux, Axios, figma, python, 
-                            fastApidesenvolvimento com React.js, material UI, Vue.js, Nuxt.js, Pinia(gerenciamento de estado) Git, typeScript linux, Axios, figma, python, fastApi
-                            API REST, Design de interface do usuário e mais 12 competências
+                                <strong>
+                                    <UBadge color="sky" class="animate-pulse h-3 mr-2" size="xs" />
+                                    Frontend Developer
+                                    Modena e Silva · Tempo integralModena e Silva · Tempo integral
+                                </strong>
+                                <br>
+                                jun de 2022 - o momento · 2 anos 9 mesesDe jun de 2022 até o momento · 2 anos 9 meses
+                                Rondônia, BrasilRondônia, Brasil
+                                desenvolvimento com React.js, material UI, Vue.js, Nuxt.js, Pinia(gerenciamento de
+                                estado) Git, typeScript linux, Axios, figma, python,
+                                fastApidesenvolvimento com React.js, material UI, Vue.js, Nuxt.js, Pinia(gerenciamento
+                                de estado) Git, typeScript linux, Axios, figma, python, fastApi
+                                API REST, Design de interface do usuário e mais 12 competências
                             </p>
                         </section>
 
                         <section class="mt-2">
                             <p class="dark:text-gray-300 leading-8">
                                 <strong>
-                                    <UBadge color="gray" class="h-3" size="xs"/>
+                                    <UBadge color="gray" class="h-3 mr-2" size="xs" />
                                     Técnico de suporte em TI Hospital Unimed Porto Velho RO
                                 </strong>
                                 <br>
-                                jun de 2020 - set de 2022 · 2 anos 4 meses De jun de 2020 até set de 2022 · 2 anos 4 meses.
+                                jun de 2020 - set de 2022 · 2 anos 4 meses De jun de 2020 até set de 2022 · 2 anos 4
+                                meses.
                                 <br>
                                 Porto Velho, Rondônia, Brasil
                                 Nesse Período atuei como Técnico em informática no Hospital Unimed Porto Velho.
-                                - atuando com o gerenciamento de Sistema Hospitalar MV PEP e MV apoio, criação de novas novas telas para o Sistema, suporte ao usuario, 
-                                criação de logins para medicos e enfermeiros. resolução de problemas, formatação de maquinas, cripagem de Cabos cat5 e cat6.
-                                Nesse Período atuei como Técnico em informática no Hospital Unimed Porto Velho. - atuando com o gerenciamento de Sistema Hospitalar MV PEP e MV apoio,
-                                 criação de novas novas telas para o Sistema, suporte ao usuario, criação de logins para medicos e enfermeiros. resolução de problemas, formatação de maquinas, cripagem de Cabos cat5 e cat6.
-                                analise de sistemas
+                                - atuando com o gerenciamento de Sistema Hospitalar MV PEP e MV apoio, criação de novas
+                                novas telas para o Sistema, suporte ao usuario,
+                                criação de logins para medicos e enfermeiros. resolução de problemas, formatação de
+                                maquinas, cripagem de Cabos cat5 e cat6.
+                                Nesse Período atuei como Técnico em informática no Hospital Unimed Porto Velho. -
+                                atuando com o gerenciamento de Sistema Hospitalar MV PEP e MV apoio,
+                                criação de novas novas telas para o Sistema, suporte ao usuario, criação de logins para
+                                medicos e enfermeiros. resolução de problemas, formatação de maquinas, cripagem de Cabos
+                                cat5 e cat6.
+                                analise de sistemas.
+                            </p>
+                        </section>
+
+                        <section class="mt-2">
+                            <p class="dark:text-gray-300 leading-8">
+                                <strong>
+                                    <UBadge color="gray" class="h-3 mr-2" size="xs" />
+                                    Estagiário de TI - Hospital Unimed
+                                </strong>
+                                <br>
+                                Hospital Unimed Porto velho · EstágioHospital Unimed Porto velho · Estágio
+                                set de 2019 - jun de 2020 · 10 mesesDe set de 2019 até jun de 2020 · 10 meses
+                            </p>
+                        </section>
+
+                        <section class="mt-2">
+                            <p class="dark:text-gray-300 leading-8">
+                                <strong>
+                                    <UBadge color="gray" class="h-3 mr-2" size="xs" />
+                                    Estagiário de TI - PGR
+                                </strong>
+                                <br>
+                                Procuradoria Geral do Estado de RondôniaProcuradoria Geral do Estado de Rondônia
+                                out de 2018 - jan de 2019 · 4 meses
                             </p>
                         </section>
                     </div>
@@ -308,7 +337,6 @@ function handleAccessLink(url: string) {
                     </div>
                 </article>
             </div>
-
 
             <!-- metricas nerdianas -->
             <div class="border  h-fit w-full dark:bg-token_bgHeader

@@ -5,30 +5,25 @@
 <template>
     <header class="header_cabecalho fixed w-full !bg-token_bgHeader h-10 z-[9991] px-2 flex items-center 
     dark:border-b-msDarkHeader dark:border-b justify-between">
-        <nav class="lg:container w-full flex justify-between mx-auto">
+        <nav class="lg:container w-full !max-w-[100rem] flex justify-between mx-auto">
             <div class="w-full flex justify-between items-center break-normal h-10">
 
                 <div class="flex font-jersey text-white gap-2
                  text-2xl items-center font-bold tracking-wider">
-                    <GlobalIcon name="lineicons:nuxt" class="h-8 w-8 text-purple-400"/>
-                    <!-- <Icon name="simple-icons:stackhawk" class="text-purple-400"/> -->
+                    <GlobalIcon name="game-icons:astronaut-helmet" class="h-8 w-8 text-purple-400" />
+                    <GlobalIcon name="lineicons:nuxt" class="h-8 w-8 text-purple-400" />
                 </div>
 
                 <div class="flex gap-2" role="group">
-                   
-
-                      <!-- menu mobile -->
-                      <div class="flex items-center">
-                      
-
-                        
+                    <!-- menu mobile -->
+                    <div class="flex items-center">
                     </div>
                 </div>
 
                 <div class="relative flex items-center gap-2">
-                    <div class="h-10 flex items-center px-2 rounded-lg
+                    <div class="h-10 flex items-center rounded-lg
                             focus:z-10 focus:ring-2 !text-white focus:ring-white focus:text-white">
-                        <GlobalButtonDarkMode :type="'button'"/>
+                        <GlobalButtonDarkMode :type="'button'" />
                     </div>
 
                 </div>
@@ -39,7 +34,7 @@
     <main class="pt-10 main_print_tag max-h-screen
       dark:bg-[#121214]">
         <slot></slot>
-       
+
     </main>
 </template>
 
@@ -95,6 +90,4 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 </style>
