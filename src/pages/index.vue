@@ -79,7 +79,6 @@ onMounted(async () => {
     getGitHubProfileInfos();
 })
 
-
 // confetti
 const visible = ref(false);
 
@@ -261,12 +260,13 @@ function handleAccessLink(url: string) {
                         <section>
                             <p class="dark:text-gray-300 leading-8">
                                 <strong>
-                                    <UBadge color="purple" class="animate-pulse h-3 mr-2" size="xs" />
+                                    <UBadge color="red" class="animate-pulse h-3 mr-2" size="xs" />
                                     Frontend Developer
-                                    Modena e Silva · Tempo integralModena e Silva · Tempo integral
+                                    Modena e Silva · Tempo integral
                                 </strong>
                                 <br>
-                                jun de 2022 - o momento · 2 anos 9 mesesDe jun de 2022 até o momento · 2 anos 9 meses
+                                <span class="underline underline-offset-8 decoration-dashed decoration-red-400">jun de 2022 até o momento · (2 anos 9 meses).</span>
+                                <br/>
                                 Rondônia, BrasilRondônia, Brasil
                                 desenvolvimento com React.js, material UI, Vue.js, Nuxt.js, Pinia(gerenciamento de
                                 estado) Git, typeScript linux, Axios, figma, python,
@@ -283,8 +283,7 @@ function handleAccessLink(url: string) {
                                     Técnico de suporte em TI Hospital Unimed Porto Velho RO
                                 </strong>
                                 <br>
-                                jun de 2020 - set de 2022 · 2 anos 4 meses De jun de 2020 até set de 2022 · 2 anos 4
-                                meses.
+                                <span class="underline underline-offset-8 decoration-dashed decoration-gray-500">jun de 2020 até set de 2022 · (2 anos 4 meses).</span>
                                 <br>
                                 Porto Velho, Rondônia, Brasil
                                 Nesse Período atuei como Técnico em informática no Hospital Unimed Porto Velho.
@@ -308,8 +307,10 @@ function handleAccessLink(url: string) {
                                     Estagiário de TI - Hospital Unimed
                                 </strong>
                                 <br>
-                                Hospital Unimed Porto velho · EstágioHospital Unimed Porto velho · Estágio
-                                set de 2019 - jun de 2020 · 10 mesesDe set de 2019 até jun de 2020 · 10 meses
+                                <span class="underline underline-offset-8 decoration-dashed decoration-gray-500">
+                                    Estágio 
+                                    set de 2019 até jun de 2020 · 10 meses
+                                </span>
                             </p>
                         </section>
 
@@ -320,8 +321,10 @@ function handleAccessLink(url: string) {
                                     Estagiário de TI - PGR
                                 </strong>
                                 <br>
-                                Procuradoria Geral do Estado de RondôniaProcuradoria Geral do Estado de Rondônia
-                                out de 2018 - jan de 2019 · 4 meses
+                                <span class="underline underline-offset-8 decoration-dashed decoration-gray-500">
+                                    Procuradoria Geral do Estado de Rondônia
+                                    out de 2018 - jan de 2019 · 4 meses
+                                </span>
                             </p>
                         </section>
                     </div>
