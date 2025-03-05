@@ -260,12 +260,12 @@ function handleAccessLink(url: string) {
                         <section>
                             <p class="dark:text-gray-300 leading-8">
                                 <strong>
-                                    <UBadge color="red" class="animate-pulse h-3 mr-2" size="xs" />
+                                    <UBadge color="purple" class="animate-pulse h-3 mr-2" size="xs" />
                                     Frontend Developer
                                     Modena e Silva · Tempo integral
                                 </strong>
                                 <br>
-                                <span class="underline underline-offset-8 decoration-dashed decoration-red-400">jun de 2022 até o momento · (2 anos 9 meses).</span>
+                                <span class="underline underline-offset-8 decoration-dashed decoration-purple-400">jun de 2022 até o momento · (2 anos 9 meses).</span>
                                 <br/>
                                 Rondônia, BrasilRondônia, Brasil
                                 desenvolvimento com React.js, material UI, Vue.js, Nuxt.js, Pinia(gerenciamento de
